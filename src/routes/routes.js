@@ -9,8 +9,8 @@ let characteres = [
   { id: 4, name: "Spider-Man" },
 ];
 
-router.get("/health", (_, res) => {
-  res.status(200).json({ message: "okidoki" });
+router.get("/", (_, res) => {
+  res.status(200).json({ message: "health ok" });
 });
 
 router.get("/characters", (_, res) => {
